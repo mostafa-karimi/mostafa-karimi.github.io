@@ -11,6 +11,27 @@ File: Layout CSS
 @import url("font-awesome.min.css");
 @import url("framework.css");
 
+/* Codes
+--------------------------------------------------------------------------------------------------------------- */
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  padding: 3px 3px;
+}
+
+pre {
+  display: block;
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  line-height: 1.6;  
+  white-space: pre;  
+} 
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row1, .row1 a{}

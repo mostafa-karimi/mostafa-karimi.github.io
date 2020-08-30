@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--
+Template Name: Basend
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html lang="">
+<head>
+  <title>HTML Basics</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">  
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-color: #5BFAD2;"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html"></a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a class="drop" href="#">Topics</a>
+            <ul>
+	      <li><a class="drop" href="#">Data Extraction</a>
+		<ul>
+                  <li><a href="web-data-extraction-html.html">HTML</a></li>
+                  <li><a href="web-data-extraction-http.html">HTTP</a></li>                  
+                </ul>
+	      </li>
+	      <li><a class="drop" href="#">Data Visualization</a>
+		<ul>
+                  <li><a href="web-data-visualization-dashboard.html">Dashboard</a></li>
+                  <li><a href="web-data-visualization-report.html">Report</a></li>                  
+                </ul>
+	      </li>
+	      <li><a href="#">Data Analytics</a></li>
+	      <li><a class="drop" href="#">R Packages</a>
+		<ul>
+                  <li><a href="r-packages-xml.html">XML</a></li>
+                  <li><a href="r-packages-xml2.html">xml2</a></li>                  
+                </ul>
+	      </li>                            
+            </ul>
+          </li>
+          <li><a class="drop" href="#">Resources</a>
+            <ul>              
+              <li><a class="drop" href="#">Basics</a>
+                <ul>
+                  <li><a href="#">R</a></li>
+                  <li><a href="resources-html-basics.html">HTML</a></li>
+                  <li><a href="#">HTTP</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <section id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 44px;">HTML Basics</h1>
+    <!-- ################################################################################################ -->
+    <ul>      
+	  <li><a href="#">Resources</a></li>
+      <li><a href="#">Basics</a></li>
+      <li><a href="#">HTML</a></li>      
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h2><b>1. Introduction</b></h2>
+	  <p>
+		<ul>
+			<li>HTML stands for <b>Hyper Text Markup Language</b></li>
+			<li>HTML is the standard <b>markup language</b> for creating Web pages</li>
+			<li>HTML  uses <b>tags</b> to define elements within a document</li>
+			<li>HTML describes the <b>structure</b> of a Web page </li>
+			<li>HTML consists of a series of <b>elements</b></li>
+			<li>HTML elements tell the <b>browser</b> how to display the content</li>
+			<li>HTML elements <b>label</b> pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+		</ul>	  
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>2. HTML Elements</b></h2>
+	  <p>
+		<ul>
+			<li>An HTML element is defined by a <b>start tag</b>, some <b>content</b>, and an <b>end tag</b>:
+				<code>&lt;tagname&gt;content&lt;/tagname&gt;</code></li>		
+			<li>The <b>HTML element</b> is everything from the start tag to the end tag</li>
+			<li>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an <b>HTML5 document</b></li>
+			<li>The <code>&lt;html&gt;</code> element is the <b>root element</b> of an HTML page</li>
+			<li>The <code>&lt;head&gt;</code> element contains <b>meta information</b> about the HTML page</li>			
+			<li>The <code>&lt;body&gt;</code> element defines the <b>document's body</b>, and is a container for all the visible contents, 
+			such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>
+	  The <code>&lt;p&gt;</code> element defines a paragraph. It has a start tag <code>&lt;p&gt;</code> and an end tag <code>&lt;/p&gt;</code>.
+<pre>
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>3. HTML Attributes</b></h2>
+	  <p>
+		<ul>
+			<li><b>All HTML elements</b> can have attributes</li>
+			<li>Attributes provide <b>additional information</b> about elements</li>
+			<li>Attributes are always specified in the <b>start tag</b></li>
+			<li>Attributes usually come in name value pairs like: <b>name="value"</b></li>
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>
+	  The <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.
+<pre>
+&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>4. HTML Headings</b></h2>
+	  <p>
+		<ul>
+			<li>HTML <b>headings</b> are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags</li>
+			<li><code>&lt;h1&gt;</code> defines the <b>most important</b> heading. 
+				<code>&lt;h6&gt;</code> defines the <b>least important</b> heading</li>
+			<li><b>Search engines</b> use the headings to index the structure and content of your web pages</li>
+			<li><b>Users</b> often skim a page by its headings, so it is important to use headings to show the document structure</li>
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+<pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>5. HTML Paragraphs</b></h2>
+	  <p>
+		<ul>
+			<li>The HTML <code>&lt;p&gt;</code> element defines a <b>paragraph</b></li>
+			<li>A paragraph always starts on a <b>new line</b>, and browsers automatically add some white space 
+			    before and after a paragraph</li>
+			<li>The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, 
+				and is most often displayed as a <b>horizontal rule</b></li>
+			<li>The HTML <code>&lt;br&gt;</code> element defines a <b>line break</b></li>
+			<li>The HTML <code>&lt;pre&gt;</code> element defines <b>preformatted text</b></li>
+			<li>The text inside a <code>&lt;pre&gt;</code> element is displayed in a <b>fixed-width font</b>, 
+				and it preserves both spaces and line breaks</li>
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+<pre>
+&lt;pre&gt;
+First line 1 		First Line 2
+
+Second Line 1 			Second Line 2
+&lt;/pre&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>6. HTML Styles</b></h2>
+	  <p>
+		<ul>
+			<li>the <code>style</code> attribute is used to set the <b>style of an HTML element</b></li>
+			<li>The HTML <code>style</code> attribute has the following syntax:
+				<code>&lt;tagname style="property:value;"&gt;</code></li>
+			<li>The property is a <b>CSS property</b> and the value is a <b>CSS value</b></li>			
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+	  The CSS <code>color</code> property defines the text color for an HTML element:
+<pre>
+&lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>7. HTML Links</b></h2>
+	  <p>
+		<ul>
+			<li>HTML links are <b>hyperlinks</b>, which means they are <b>links</b> that one can click on or activate with a pointing device 
+				in order to jump to another document</li>
+			<li>The HTML <code>&lt;a&gt;</code> tag defines a hyperlink and it has the following syntax:
+				<code>&lt;a href="url"&gt;link text&lt;/a&gt;</code></li>
+			<li>the <code>href</code> attribute indicates the link's <b>destination</b></li>
+			<li>An <b>absolute URL</b> is the full URL of the page that you link to:
+			<code>&lt;a href = "https://www.example.com/xyz.html"&gt;</code></li>
+			<li>A <b>relative URL</b> is a link to a page within the same website:
+			<code>&lt;a href = "/xyz.html"&gt;</code></li>			
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+	  This example shows how to create a link to Google.com:
+<pre>
+&lt;p&gt;Click this text:&lt;/p&gt;
+&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;
+&lt;!-- ##################################################################### --&gt;
+&lt;p&gt;Click this image&lt;/p&gt;
+&lt;a href="https://www.google.com"&gt;&lt;img src="smiley.gif"&gt;&lt;/a&gt;
+&lt;!-- ##################################################################### --&gt;
+&lt;p&gt;Click this button&lt;/p&gt;
+&lt;button href="https://www.google.com"&gt;Button&lt;/button&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>8. HTML Tables</b></h2>
+	  <p>
+		<ul>
+			<li>The <code>&lt;table&gt;</code> tag defines an HTML <b>table</b></li>
+			<li>Each <b>table row</b> is defined with a <code>&lt;tr&gt;</code> tag</li>
+			<li>Each <b>table header</b> is defined with a <code>&lt;th&gt;</code> tag</li>
+			<li>Each <b>table data</b> is defined with a <code>&lt;td&gt;</code> tag</li>					
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+	  A simple HTML table:
+<pre>
+&lt;table style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>9. HTML Lists</b></h2>
+	  <p>
+		<ul>
+			<li>An <b>unordered list</b> starts with the <code>&lt;ul&gt;</code> tag and 
+				each list item starts with the <code>&lt;li&gt;</code> tag</li>
+			<li>An <b>ordered list</b> starts with the <code>&lt;ol&gt;</code> tag and 
+				each list item starts with the <code>&lt;li&gt;</code> tag</li>
+			<li>A <b>description list</b> starts with the <code>&lt;dl&gt;</code> tag, 
+				the <code>&lt;dt&gt;</code> tag defines the term, 
+				and the <code>&lt;dd&gt;</code> tag describes each term</li>			
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+	  
+<pre>
+&lt;p&gt;Unordered List:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ################################ --&gt;
+&lt;p&gt;Ordered List:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- ################################ --&gt;
+&lt;p&gt;Description List:&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Coffee&lt;/dt&gt;
+  &lt;dd&gt;- black hot drink&lt;/dd&gt;
+  &lt;dt&gt;Milk&lt;/dt&gt;
+  &lt;dd&gt;- white cold drink&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>10. HTML Block and Inline Elements</b></h2>
+	  <p>
+		<ul>
+			<li>A <b>block-level element</b> always starts on a new line and takes up the full width available</li>
+			<li>An <b>inline element</b> does not start on a new line and it only takes up as much width as necessary</li>
+			<li>The <code>&lt;div&gt;</code> element is a <b>block-level</b> and is often used as a container for other HTML elements</li>				
+			<li>The <code>&lt;div&gt;</code> element has no required <b>attributes</b>, 
+				but <code>style</code>, <code>class</code> and <code>id</code> are common</li>
+			<li>When used together with CSS, the <code>&lt;div&gt;</code> element can be used to <b>style blocks of content</b></li>
+			<li>The <code>&lt;span&gt;</code> element is an <b>inline</b> container used to mark up a part of a text, or a part of a document</li>
+			<li>The <code>&lt;span&gt;</code> element has no required <b>attributes</b>, 
+				but <code>style</code>, <code>class</code> and <code>id</code> are common</li>
+			<li>When used together with CSS, the <code>&lt;span&gt;</code> element can be used to <b>style parts of the text</b></li>						
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+	  
+<pre>
+&lt;div style="background-color:black;color:white;padding:20px;"&gt;
+  &lt;h2&gt;London&lt;/h2&gt;
+  &lt;p&gt;London is the capital city of England.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;My mother has &lt;span style="color:blue;font-weight:bold"&gt;blue&lt;/span&gt; eyes
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>11. HTML class Attribute</b></h2>
+	  <p>
+		<ul>
+			<li>The HTML <code>class</code> attribute specifies one or more <b>class names</b> for an element</li>
+			<li>Classes are used by <b>CSS</b> and <b>JavaScript</b> to select and access specific elements</li>
+			<li>The <code>class</code> attribute can be used on <b>any HTML element</b></li>
+			<li>The class name is <b>case sensitive</b></li>
+			<li>Different HTML elements can point to the <b>same class name</b></li>
+			<li>The <b>syntax</b> for <code>class</code> is: write a dot character (.), followed by a class name, 
+				then define the CSS properties within { }</li>		
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+	  
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.note {
+  font-size: 120%;
+  color: red;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="city"&gt;
+  &lt;h2&gt;London&lt;/h2&gt;
+  &lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+&lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>12. HTML id Attribute</b></h2>
+	  <p>
+		<ul>
+			<li>The <code>id</code> attribute is used to specify a <b>unique id</b> for an HTML element</li>
+			<li>The value of the <code>id</code> attribute must be <b>unique</b> within the HTML document</li>
+			<li>The <code>id</code> attribute is used by <b>CSS</b> and <b>JavaScript</b> to style or select a specific element</li>
+			<li>The value of the <code>id</code> attribute is <b>case sensitive</b></li>
+			<li>The <code>id</code> attribute is also used to create <b>HTML bookmarks</b></li>
+			<li>The <b>syntax</b> for <code>id</code> is: write a hash character (#), followed by an id name, 
+				then define the CSS properties within { }</li>					
+		</ul>
+	  </p>
+	  <h3><b>Example</b></h3>
+	  <p>	  
+	  
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>13. HTML Head</b></h2>
+	  <p>
+		<ul>
+			<li>The <code>&lt;head&gt;</code> element is a container for <b>metadata</b> (data about data)</li>
+			<li>The <code>&lt;head&gt;</code> element is <b>placed</b> between the <code>&lt;html&gt;</code> tag 
+				and the <code>&lt;body&gt;</code> tag</li>
+			<li>The <code>&lt;title&gt;</code> element is <b>required</b> and it defines the title of the document</li>
+			<li>The <code>&lt;style&gt;</code> element is used to define style information for a single <b>document</b></li>
+			<li>The <code>&lt;link&gt;</code> tag is most often used to link to <b>external style sheets</b></li>
+			<li>The <code>&lt;meta&gt;</code> element is typically used to <b>specify</b> 
+				the character set, page description, keywords, author of the document, and viewport settings</li>
+			<li>The <code>&lt;script&gt;</code> element is used to define client-side <b>JavaScripts</b></li>
+			<li>The <code>&lt;base&gt;</code> element specifies the <b>base URL</b> and/or target for all relative URLs in a page</li>		
+		</ul>
+	  </p>
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>14. HTML Layout</b></h2>
+	  <p>
+		<ul>
+			<li><code>&lt;header&gt;</code> defines a header for a <b>document or a section</b></li>
+			<li><code>&lt;nav&gt;</code> defines a set of <b>navigation</b> links</li>
+			<li><code>&lt;section&gt;</code> defines a section in a <b>document</b></li>
+			<li><code>&lt;article&gt;</code> defines an <b>independent</b>, self-contained content</li>
+			<li><code>&lt;aside&gt;</code> defines content aside from the content, like a <b>sidebar</b> </li>
+			<li><code>&lt;footer&gt;</code> defines a footer for a <b>document or a section</b></li>
+			<li><code>&lt;details&gt;</code> defines <b>additional details</b> that the user can open and close on demand</li>
+			<li><code>&lt;summary&gt;</code> defines a <b>heading</b> for the <code>&lt;details&gt;</code> element</li>			
+		</ul>
+	  </p>	  
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h2><b>15. HTML URL</b></h2>
+	  <p>
+		<ul>
+			<li>URL stands for <b>Uniform Resource Locators</b></li>
+			<li>A URL can be composed of <b>words</b> or an Internet Protocol <b>(IP) address</b></li>
+			<li>Web browsers request pages from <b>web servers</b> by using a URL</li>
+			<li>A <b>web address</b> follows these syntax rules: <b>scheme://prefix.domain:port/path/filename</b></li>
+			<li><b>scheme</b> defines the type of Internet service (most common is <b>http</b> or <b>https</b>)</li>
+			<li><b>prefix</b> defines a domain prefix (default for http is <b>www</b>)</li>
+			<li><b>domain</b> defines the Internet domain <b>name</b> (like google.com)</li>
+			<li><b>port</b> defines the port <b>number</b> at the host (default for http is 80)</li>
+			<li><b>path</b> defines a path at the <b>server</b> (If omitted: the root directory of the site)</li>
+			<li><b>filename</b> defines the name of a <b>document</b> or resource</li>
+			<li><b>http</b> snatnds for <b>HyperText Transfer Protocol</b> and is used for common web pages</li>
+			<li><b>https</b> stands for <b>Secure HyperText Transfer Protocol</b> and is used for secure web pages</li>
+			<li><b>ftp</b> stands for <b>File Transfer Protocol</b> and is used for downloading or uploading files</li>
+			<li>URLs can only be sent over the Internet using the <b>ASCII</b> character-set</li>			
+		</ul>
+	  </p>	  
+	  <br>
+	  <!-- ################################################################################################ -->
+	  <h3><b>Resources</b></h3>
+	  <p><a href="https://www.w3schools.com/html/default.asp">HTML Reference<a></p>
+	  <p><a href="https://www.w3schools.com/tags/default.asp">HTML Tags Reference<a></p>
+	  <p><a href="https://www.w3schools.com/tags/ref_attributes.asp">HTML Attributes Reference<a></p>
+	  <p><a href="https://www.w3schools.com/tags/ref_urlencode.asp">HTML URL Encoding Reference<a></p>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4 bgded overlay" style="background-image:url('../images/demo/backgrounds/02.png');">
+  
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved </p>    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
